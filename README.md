@@ -17,26 +17,26 @@
     ```
 ## Questão 2
 
- 1.Quantas suítes de testes você desenvolveu?
+### 1. Quantas suítes de testes você desenvolveu?
 
-É uma suíte que contém seis testes.
+Foi desenvolvida uma suíte de teste, que contém seis testes.(4 positivos, 2 negativos).
 
-2.Os testes desenvolvidos são manuais ou automatizados?
+### 2. Os testes desenvolvidos são manuais ou automatizados?
 
-Os testes automáticos.
+Eles são automatizados.
 
-3.Onde os testes se localizam na pirâmide apresentada?
+### 3. Onde os testes se localizam na pirâmide apresentada?
 
-É um teste de serviço.
+Eles se localizam na parte de testes de serviço.
 
-4.Os testes desenvolvidos são funcionais ou não-funcionais?
+### 4. Os testes desenvolvidos são funcionais ou não-funcionais?
 
-Funcionais.
+Eles são funcionais.
 
-Alguns dos testes desenvolvidos são testes Fim-a-Fim (End-To-End)?
+### 5. Alguns dos testes desenvolvidos são testes Fim-a-Fim (End-To-End)?
 
 Sim,pois eles verificam se a API é capaz de pegar as informações corretar.
 
-O que se deve fazer para que os testes desenvolvidos funcionem em modo regressão?
+### 6. O que se deve fazer para que os testes desenvolvidos funcionem em modo regressão?
 
-Usando tags para automatizar a bateria de testes.
+Deve-se usar tags para automatizar a bateria de testes.
