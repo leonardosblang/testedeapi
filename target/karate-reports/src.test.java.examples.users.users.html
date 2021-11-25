@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.examples.users.users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-11-24 08:01:06 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Verificar se a API está online</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>Mostra o preço do bitcoin ano passado</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:20]"><span>[3:20]</span> <span>Mostra o preço do ethreum nesse instante</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:27]"><span>[4:27]</span> <span>Mostra informações relativas ao Inacoin. Como ele não existe no momento no CoinGecko, é retornado um erro</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:33]"><span>[5:33]</span> <span>Dá uma lista das exchanges de criptomoeda</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:39]"><span>[6:39]</span> <span>Mostra informações relativas a exchange inahub. Como ela não existe no momento, é retornado um erro</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/users/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testes na API De Criptomoeda CoinGecko</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Verificar se a API está online</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2981</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://api.coingecko.com/api/v3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:01:03.147 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/ping&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2969</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">20:01:03.559 request:
+1 &gt; GET https://api.coingecko.com/api/v3/ping
+1 &gt; Host: api.coingecko.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:01:06.183 response time in milliseconds: 2624
+1 &lt; 200
+1 &lt; Date: Wed, 24 Nov 2021 23:02:07 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
+1 &lt; Access-Control-Request-Method: *
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+1 &lt; Access-Control-Expose-Headers: link, per-page, total
+1 &lt; Vary: Accept-Encoding, Origin
+1 &lt; ETag: W/&quot;3b03394e3a12ad2b5113efa4ed9b93d5&quot;
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; X-Request-Id: 179117e9-218f-4aee-9cc6-3466bd3ad9f0
+1 &lt; X-Runtime: 0.003998
+1 &lt; Alternate-Protocol: 443:npn-spdy/2
+1 &lt; CF-Cache-Status: MISS
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b364347d912f3bf-GRU
+{&quot;gecko_says&quot;:&quot;(V3) To the Moon!&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:13]</span>
+                <span class="scenario-name">Mostra o preço do bitcoin ano passado</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>754</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://api.coingecko.com/api/v3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:01:03.146 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/coins/bitcoin/history?date=24-11-2020&amp;localization=false&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">744</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">20:01:03.559 request:
+1 &gt; GET https://api.coingecko.com/api/v3/coins/bitcoin/history?date=24-11-2020&amp;localization=false
+1 &gt; Host: api.coingecko.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:01:03.948 response time in milliseconds: 353
+1 &lt; 200
+1 &lt; Date: Wed, 24 Nov 2021 23:02:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=30, public, must-revalidate, s-maxage=1800
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
+1 &lt; Access-Control-Request-Method: *
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+1 &lt; Access-Control-Expose-Headers: link, per-page, total
+1 &lt; Vary: Accept-Encoding, Origin
+1 &lt; ETag: W/&quot;21f1589314dd7c74ca071f4c7838f061&quot;
+1 &lt; X-Request-Id: ee5785a6-4700-405e-9201-39a0583f284f
+1 &lt; X-Runtime: 0.078522
+1 &lt; Alternate-Protocol: 443:npn-spdy/2
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 496
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b364347df644d0f-GRU
+{&quot;symbol&quot;:&quot;btc&quot;,&quot;image&quot;:{&quot;small&quot;:&quot;https:\/\/assets.coingecko.com\/coins\/images\/1\/small\/bitcoin.png?1547033579&quot;,&quot;thumb&quot;:&quot;https:\/\/assets.coingecko.com\/coins\/images\/1\/thumb\/bitcoin.png?1547033579&quot;},&quot;market_data&quot;:{&quot;total_volume&quot;:{&quot;usd&quot;:3.33896838514282E10,&quot;xdr&quot;:2.3410208531597256E10,&quot;eos&quot;:9.911109227735348E9,&quot;sgd&quot;:4.486237922277887E10,&quot;vef&quot;:8296923815413780,&quot;bnb&quot;:1.0820482110283976E9,&quot;eth&quot;:5.497507979456068E7,&quot;nzd&quot;:4.816351709611804E10,&quot;brl&quot;:1.816732698356209E11,&quot;xag&quot;:1.4161673458894577E9,&quot;chf&quot;:3.0472794459851227E10,&quot;mxn&quot;:6.711313766057214E11,&quot;clp&quot;:2.584029780218699E13,&quot;bits&quot;:1.8193578318563013E12,&quot;zar&quot;:5.137169808961486E11,&quot;vnd&quot;:7.780259527758484E14,&quot;xau&quot;:1.8168328674077634E7,&quot;aud&quot;:4.575244802520654E10,&quot;ils&quot;:1.1190986608696242E11,&quot;idr&quot;:4.7351491013463994E14,&quot;xrp&quot;:5.484025461754753E10,&quot;try&quot;:2.6307731906540292E11,&quot;hkd&quot;:2.5885853251077512E11,&quot;twd&quot;:9.527144938798883E11,&quot;aed&quot;:1.2264698672306602E11,&quot;eur&quot;:2.8196519542647923E10,&quot;dkk&quot;:2.09928455052795E11,&quot;bch&quot;:1.0284970871372919E8,&quot;cad&quot;:4.365033369897206E10,&quot;myr&quot;:1.3658050179426714E11,&quot;dot&quot;:5.682695033464124E9,&quot;link&quot;:2.1918369200299582E9,&quot;mmk&quot;:4.363972399336958E13,&quot;nok&quot;:3.013488084236961E11,&quot;btc&quot;:1819357.8318563013,&quot;lkr&quot;:6.189345927163903E12,&quot;ngn&quot;:1.279868793263568E13,&quot;czk&quot;:7.420022493883636E11,&quot;pkr&quot;:5.37523428144979E12,&quot;sek&quot;:2.88125925993906E11,&quot;ltc&quot;:3.77480445761135E8,&quot;uah&quot;:9.480692542831083E11,&quot;bhd&quot;:1.2589313178710192E10,&quot;ars&quot;:2.6810547155658916E12,&quot;sar&quot;:1.2521689052005908E11,&quot;inr&quot;:2.479021919053444E12,&quot;cny&quot;:2.199044578455062E11,&quot;thb&quot;:1.0133769048908466E12,&quot;krw&quot;:3.719706011766413E13,&quot;jpy&quot;:3.489322131525802E12,&quot;bdt&quot;:2.8323597340418096E12,&quot;pln&quot;:1.2605296820369872E11,&quot;gbp&quot;:2.5050409971431E10,&quot;bmd&quot;:3.33896838514282E10,&quot;huf&quot;:1.0171326366318857E13,&quot;xlm&quot;:2.578666967979181E11,&quot;sats&quot;:1.8193578318563012E14,&quot;kwd&quot;:1.0197142668858469E10,&quot;php&quot;:1.6125674029052212E12,&quot;yfi&quot;:1343362.1652626225,&quot;rub&quot;:2.5375057867518325E12},&quot;market_cap&quot;:{&quot;usd&quot;:3.4063514671439825E11,&quot;xdr&quot;:2.3882645469954626E11,&quot;eos&quot;:1.0111123426368263E11,&quot;sgd&quot;:4.576773831254651E11,&quot;vef&quot;:84643624471477920,&quot;bnb&quot;:1.1038848189032637E10,&quot;eth&quot;:5.608452135929681E8,&quot;nzd&quot;:4.913549581756775E11,&quot;brl&quot;:1.853395833273042E12,&quot;xag&quot;:1.4447467480844736E10,&quot;chf&quot;:3.108776009325747E11,&quot;mxn&quot;:6.846753504823841E12,&quot;clp&quot;:2.6361775907067216E14,&quot;bits&quot;:1.8552412E13,&quot;zar&quot;:5.240842049774375E12,&quot;vnd&quot;:7937271456377525,&quot;xau&quot;:1.8534980238170567E8,&quot;aud&quot;:4.667576942314321E11,&quot;ils&quot;:1.1416829767823801E12,&quot;idr&quot;:4830708239193735,&quot;xrp&quot;:5.594697530118792E11,&quot;try&quot;:2.6838643209627456E12,&quot;hkd&quot;:2.6408250701753823E12,&quot;twd&quot;:9.719410427596133E12,&quot;aed&quot;:1.2512210209113276E12,&quot;eur&quot;:2.8765548107561505E11,&quot;dkk&quot;:2.141649810301427E12,&quot;bch&quot;:1.0492529900290064E9,&quot;cad&quot;:4.453123272997327E11,&quot;myr&quot;:1.393368067635247E12,&quot;dot&quot;:5.797376414435371E10,&quot;link&quot;:2.2360699614605785E10,&quot;mmk&quot;:4.45204089119324E14,&quot;nok&quot;:3.074302710572809E12,&quot;btc&quot;:1.8552412E7,&quot;lkr&quot;:6.314251932862969E13,&quot;ngn&quot;:1.3056975804515366E14,&quot;czk&quot;:7.569764547860721E12,&quot;pkr&quot;:5.4837108558234945E13,&quot;sek&quot;:2.9394054016764224E12,&quot;ltc&quot;:3.8509830639849186E9,&quot;uah&quot;:9.672020584714918E12,&quot;bhd&quot;:1.2843375698749017E11,&quot;ars&quot;:2.7351605677064633E13,&quot;sar&quot;:1.2774386862484966E12,&quot;inr&quot;:2.5290505859906758E13,&quot;cny&quot;:2.2434230762610293E12,&quot;thb&quot;:1.0338276702781994E13,&quot;krw&quot;:3.794772686948591E14,&quot;jpy&quot;:3.5597394737094766E13,&quot;bdt&quot;:2.8895190438049562E13,&quot;pln&quot;:1.2859681903222236E12,&quot;gbp&quot;:2.555594750115981E11,&quot;bmd&quot;:3.4063514671439825E11,&quot;huf&quot;:1.0376591957227692E14,&quot;xlm&quot;:2.6307065525796797E12,&quot;sats&quot;:1855241200000000,&quot;kwd&quot;:1.0402929253628381E11,&quot;php&quot;:1.645110317065733E13,&quot;yfi&quot;:1.370472300040158E7,&quot;rub&quot;:2.5887147054310105E13},&quot;current_price&quot;:{&quot;usd&quot;:18360.693300385865,&quot;xdr&quot;:12873.067647459873,&quot;eos&quot;:5450.031740545792,&quot;sgd&quot;:24669.427518398417,&quot;vef&quot;:4.562405388123006E9,&quot;bnb&quot;:595.0087885625134,&quot;eth&quot;:30.230312564908985,&quot;nzd&quot;:26484.694182927673,&quot;brl&quot;:99900.53224739953,&quot;xag&quot;:778.7379603711224,&quot;chf&quot;:16756.721494357425,&quot;mxn&quot;:369049.237631411,&quot;clp&quot;:1.4209352351094406E7,&quot;bits&quot;:1000000.0,&quot;zar&quot;:282488.44677308673,&quot;vnd&quot;:4.2782962433011544E8,&quot;xau&quot;:9.990604045538966,&quot;aud&quot;:25158.868519706884,&quot;ils&quot;:61538.250486372344,&quot;idr&quot;:2.603816818639935E8,&quot;xrp&quot;:30156.17338661297,&quot;try&quot;:144663.9025137403,&quot;hkd&quot;:142344.02891523665,&quot;twd&quot;:523889.31571787724,&quot;aed&quot;:67442.49863097734,&quot;eur&quot;:15505.01794999028,&quot;dkk&quot;:115437.80993551816,&quot;bch&quot;:56.556149681723674,&quot;cad&quot;:24002.934351594427,&quot;myr&quot;:75104.41594522842,&quot;dot&quot;:3124.8639877312835,&quot;link&quot;:1205.2718328272242,&quot;mmk&quot;:2.3997100167855483E7,&quot;nok&quot;:165709.05769949526,&quot;btc&quot;:1.0,&quot;lkr&quot;:3403466.8553409493,&quot;ngn&quot;:7037885.857922606,&quot;czk&quot;:408020.5068678251,&quot;pkr&quot;:2955794.0260401154,&quot;sek&quot;:158437.91102075687,&quot;ltc&quot;:207.57317506666615,&quot;uah&quot;:521334.93934454006,&quot;bhd&quot;:6922.752523364087,&quot;ars&quot;:1474288.3931784523,&quot;sar&quot;:68855.66611222824,&quot;inr&quot;:1363192.3363876764,&quot;cny&quot;:120923.52607634135,&quot;thb&quot;:557247.0416667113,&quot;krw&quot;:2.045433600196347E7,&quot;jpy&quot;:1918747.5319702243,&quot;bdt&quot;:1557489.691262223,&quot;pln&quot;:69315.41787246983,&quot;gbp&quot;:13774.999984454747,&quot;bmd&quot;:18360.693300385865,&quot;huf&quot;:5593122.854983865,&quot;xlm&quot;:141798.62718549374,&quot;sats&quot;:1.0E8,&quot;kwd&quot;:5607.319012551242,&quot;php&quot;:886736.6232842032,&quot;yfi&quot;:0.7387030322742714,&quot;rub&quot;:1395352.100541434}},&quot;community_data&quot;:{&quot;twitter_followers&quot;:72799,&quot;facebook_likes&quot;:null,&quot;reddit_subscribers&quot;:1775125,&quot;reddit_average_posts_48h&quot;:7.667,&quot;reddit_average_comments_48h&quot;:620.25,&quot;reddit_accounts_active_48h&quot;:&quot;7023.30769230769&quot;},&quot;name&quot;:&quot;Bitcoin&quot;,&quot;id&quot;:&quot;bitcoin&quot;,&quot;developer_data&quot;:{&quot;forks&quot;:26685,&quot;total_issues&quot;:5811,&quot;pull_request_contributors&quot;:701,&quot;code_additions_deletions_4_weeks&quot;:{&quot;additions&quot;:9183,&quot;deletions&quot;:-3448},&quot;subscribers&quot;:3591,&quot;commit_count_4_weeks&quot;:307,&quot;pull_requests_merged&quot;:8063,&quot;stars&quot;:46169,&quot;closed_issues&quot;:5229},&quot;public_interest_stats&quot;:{&quot;bing_matches&quot;:null,&quot;alexa_rank&quot;:9440}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:20]</span>
+                <span class="scenario-name">Mostra o preço do ethreum nesse instante</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>846</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://api.coingecko.com/api/v3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:01:03.146 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/simple/price?ids=ethereum&amp;vs_currencies=usd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">835</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">20:01:03.559 request:
+1 &gt; GET https://api.coingecko.com/api/v3/simple/price?ids=ethereum&amp;vs_currencies=usd
+1 &gt; Host: api.coingecko.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:01:04.046 response time in milliseconds: 485
+1 &lt; 200
+1 &lt; Date: Wed, 24 Nov 2021 23:02:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=30, public, must-revalidate, s-maxage=60
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
+1 &lt; Access-Control-Request-Method: *
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+1 &lt; Access-Control-Expose-Headers: link, per-page, total
+1 &lt; Vary: Accept-Encoding, Origin
+1 &lt; ETag: W/&quot;06c761a87335693e98aee50829db3ccd&quot;
+1 &lt; X-Request-Id: beb6e446-61f7-47f2-a1e2-65bfe101a543
+1 &lt; X-Runtime: 0.004282
+1 &lt; Alternate-Protocol: 443:npn-spdy/2
+1 &lt; CF-Cache-Status: EXPIRED
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b364347db0ff3d3-GRU
+{&quot;ethereum&quot;:{&quot;usd&quot;:4248.46}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:27]</span>
+                <span class="scenario-name">Mostra informações relativas ao Inacoin. Como ele não existe no momento no CoinGecko, é retornado um erro</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>874</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://api.coingecko.com/api/v3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:01:03.147 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;coins/inacoin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">863</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">20:01:03.559 request:
+1 &gt; GET https://api.coingecko.com/api/v3/coins/inacoin
+1 &gt; Host: api.coingecko.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:01:04.077 response time in milliseconds: 517
+1 &lt; 404
+1 &lt; Date: Wed, 24 Nov 2021 23:02:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
+1 &lt; Access-Control-Request-Method: *
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+1 &lt; Access-Control-Expose-Headers: link, per-page, total
+1 &lt; Vary: Accept-Encoding, Origin
+1 &lt; Cache-Control: no-cache
+1 &lt; X-Request-Id: 81de046a-9725-412f-bf1e-91c31033139f
+1 &lt; X-Runtime: 0.011602
+1 &lt; CF-Cache-Status: MISS
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b364347ec3f79b4-GRU
+{&quot;error&quot;:&quot;Could not find coin with the given id&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref failed">31</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">20:01:04.079 src/test/java/examples/users/users.feature:31
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 517, url: https://api.coingecko.com/api/v3/coins/inacoin, response: 
+{&quot;error&quot;:&quot;Could not find coin with the given id&quot;}
+src/test/java/examples/users/users.feature:31
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:33]</span>
+                <span class="scenario-name">Dá uma lista das exchanges de criptomoeda</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>755</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://api.coingecko.com/api/v3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:01:03.146 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/exchanges/list&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">744</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">20:01:03.559 request:
+1 &gt; GET https://api.coingecko.com/api/v3/exchanges/list
+1 &gt; Host: api.coingecko.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:01:03.955 response time in milliseconds: 338
+1 &lt; 200
+1 &lt; Date: Wed, 24 Nov 2021 23:02:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=30, public, must-revalidate, s-maxage=300
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
+1 &lt; Access-Control-Request-Method: *
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+1 &lt; Access-Control-Expose-Headers: link, per-page, total
+1 &lt; Vary: Accept-Encoding, Origin
+1 &lt; ETag: W/&quot;0d9f4b98b9facbf187fab1a56f8b4fb5&quot;
+1 &lt; X-Request-Id: 6b8f35dd-3ed9-4efc-8bc8-81eba7565325
+1 &lt; X-Runtime: 0.156977
+1 &lt; Alternate-Protocol: 443:npn-spdy/2
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 35
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b364347ddf3f770-GRU
+[{&quot;name&quot;:&quot;Aave&quot;,&quot;id&quot;:&quot;aave&quot;},{&quot;name&quot;:&quot;AAX&quot;,&quot;id&quot;:&quot;aax&quot;},{&quot;name&quot;:&quot;AAX Futures&quot;,&quot;id&quot;:&quot;aax_futures&quot;},{&quot;name&quot;:&quot;ABCC&quot;,&quot;id&quot;:&quot;abcc&quot;},{&quot;name&quot;:&quot;ACDX&quot;,&quot;id&quot;:&quot;acdx&quot;},{&quot;name&quot;:&quot;ACDX Futures&quot;,&quot;id&quot;:&quot;acdx_futures&quot;},{&quot;name&quot;:&quot;Acsi Finance&quot;,&quot;id&quot;:&quot;acsi_finance&quot;},{&quot;name&quot;:&quot;AEX&quot;,&quot;id&quot;:&quot;aex&quot;},{&quot;name&quot;:&quot;Allbit&quot;,&quot;id&quot;:&quot;allbit&quot;},{&quot;name&quot;:&quot;Allcoin&quot;,&quot;id&quot;:&quot;allcoin&quot;},{&quot;name&quot;:&quot;Alpha5&quot;,&quot;id&quot;:&quot;alpha_five&quot;},{&quot;name&quot;:&quot;AltcoinTrader&quot;,&quot;id&quot;:&quot;altcointrader&quot;},{&quot;name&quot;:&quot;AlterDice&quot;,&quot;id&quot;:&quot;alterdice&quot;},{&quot;name&quot;:&quot;Altmarkets&quot;,&quot;id&quot;:&quot;altmarkets&quot;},{&quot;name&quot;:&quot;Anyswap&quot;,&quot;id&quot;:&quot;anyswap&quot;},{&quot;name&quot;:&quot;ApeSwap&quot;,&quot;id&quot;:&quot;apeswap&quot;},{&quot;name&quot;:&quot;ApeSwap (Polygon)&quot;,&quot;id&quot;:&quot;apeswap_polygon&quot;},{&quot;name&quot;:&quot;Aprobit&quot;,&quot;id&quot;:&quot;aprobit&quot;},{&quot;name&quot;:&quot;Artis Turba&quot;,&quot;id&quot;:&quot;artisturba&quot;},{&quot;name&quot;:&quot;Atomars&quot;,&quot;id&quot;:&quot;atomars&quot;},{&quot;name&quot;:&quot;B2BX&quot;,&quot;id&quot;:&quot;b2bx&quot;},{&quot;name&quot;:&quot;Baguette&quot;,&quot;id&quot;:&quot;baguette&quot;},{&quot;name&quot;:&quot;Bakeryswap&quot;,&quot;id&quot;:&quot;bakeryswap&quot;},{&quot;name&quot;:&quot;Bakkt&quot;,&quot;id&quot;:&quot;bakkt&quot;},{&quot;name&quot;:&quot;Balanced Network&quot;,&quot;id&quot;:&quot;balanced_network&quot;},{&quot;name&quot;:&quot;Balancer (v2)&quot;,&quot;id&quot;:&quot;balancer&quot;},{&quot;name&quot;:&quot;Balancer (Arbitrum)&quot;,&quot;id&quot;:&quot;balancer_arbitrum&quot;},{&quot;name&quot;:&quot;Balancer (Polygon)&quot;,&quot;id&quot;:&quot;balancer_polygon&quot;},{&quot;name&quot;:&quot;Balancer (v1)&quot;,&quot;id&quot;:&quot;balancer_v1&quot;},{&quot;name&quot;:&quot;Bamboo Relay&quot;,&quot;id&quot;:&quot;bamboo_relay&quot;},{&quot;name&quot;:&quot;Bancor Network&quot;,&quot;id&quot;:&quot;bancor&quot;},{&quot;name&quot;:&quot;Bankera&quot;,&quot;id&quot;:&quot;bankera&quot;},{&quot;name&quot;:&quot;BaseFEX&quot;,&quot;id&quot;:&quot;basefex&quot;},{&quot;name&quot;:&quot;BCEX&quot;,&quot;id&quot;:&quot;bcex&quot;},{&quot;name&quot;:&quot;Beaxy&quot;,&quot;id&quot;:&quot;beaxy&quot;},{&quot;name&quot;:&quot;Beethoven X&quot;,&quot;id&quot;:&quot;beethovenx&quot;},{&quot;name&quot;:&quot;BepSwap&quot;,&quot;id&quot;:&quot;bepswap&quot;},{&quot;name&quot;:&quot;Bgogo&quot;,&quot;id&quot;:&quot;bgogo&quot;},{&quot;name&quot;:&quot;Bibo&quot;,&quot;id&quot;:&quot;bibo&quot;},{&quot;name&quot;:&quot;Bibox&quot;,&quot;id&quot;:&quot;bibox&quot;},{&quot;name&quot;:&quot;Bibox (Futures)&quot;,&quot;id&quot;:&quot;bibox_futures&quot;},{&quot;name&quot;:&quot;Biconomy&quot;,&quot;id&quot;:&quot;biconomy&quot;},{&quot;name&quot;:&quot;Bidesk&quot;,&quot;id&quot;:&quot;bidesk&quot;},{&quot;name&quot;:&quot;BigONE&quot;,&quot;id&quot;:&quot;bigone&quot;},{&quot;name&quot;:&quot;BigONE Futures&quot;,&quot;id&quot;:&quot;bigone_futures&quot;},{&quot;name&quot;:&quot;BiKi&quot;,&quot;id&quot;:&quot;biki&quot;},{&quot;name&quot;:&quot;Biki (Futures)&quot;,&quot;id&quot;:&quot;biki_futures&quot;},{&quot;name&quot;:&quot;Bilaxy&quot;,&quot;id&quot;:&quot;bilaxy&quot;},{&quot;name&quot;:&quot;Binance&quot;,&quot;id&quot;:&quot;binance&quot;},{&quot;name&quot;:&quot;Binance DEX&quot;,&quot;id&quot;:&quot;binance_dex&quot;},{&quot;name&quot;:&quot;Binance DEX (Mini)&quot;,&quot;id&quot;:&quot;binance_dex_mini&quot;},{&quot;name&quot;:&quot;Binance (Futures)&quot;,&quot;id&quot;:&quot;binance_futures&quot;},{&quot;name&quot;:&quot;Binance Jersey&quot;,&quot;id&quot;:&quot;binance_jersey&quot;},{&quot;name&quot;:&quot;Binance US&quot;,&quot;id&quot;:&quot;binance_us&quot;},{&quot;name&quot;:&quot;BiONE&quot;,&quot;id&quot;:&quot;bione&quot;},{&quot;name&quot;:&quot;Birake&quot;,&quot;id&quot;:&quot;birake&quot;},{&quot;name&quot;:&quot;Bisq&quot;,&quot;id&quot;:&quot;bisq&quot;},{&quot;name&quot;:&quot;Bit2c&quot;,&quot;id&quot;:&quot;bit2c&quot;},{&quot;name&quot;:&quot;Bitalong&quot;,&quot;id&quot;:&quot;bitalong&quot;},{&quot;name&quot;:&quot;Bitbank&quot;,&quot;id&quot;:&quot;bitbank&quot;},{&quot;name&quot;:&quot;BitBay&quot;,&quot;id&quot;:&quot;bitbay&quot;},{&quot;name&quot;:&quot;BitBNS&quot;,&quot;id&quot;:&quot;bitbns&quot;},{&quot;name&quot;:&quot;BITFRONT&quot;,&quot;id&quot;:&quot;bitbox&quot;},{&quot;name&quot;:&quot;Bitci&quot;,&quot;id&quot;:&quot;bitci&quot;},{&quot;name&quot;:&quot;FMFW.io&quot;,&quot;id&quot;:&quot;bitcoin_com&quot;},{&quot;name&quot;:&quot;Bit.com&quot;,&quot;id&quot;:&quot;bit_com_futures&quot;},{&quot;name&quot;:&quot;Bitcratic&quot;,&quot;id&quot;:&quot;bitcratic&quot;},{&quot;name&quot;:&quot;Bitex.la&quot;,&quot;id&quot;:&quot;bitex&quot;},{&quot;name&quot;:&quot;BITEXBOOK&quot;,&quot;id&quot;:&quot;bitexbook&quot;},{&quot;name&quot;:&quot;Bitexen&quot;,&quot;id&quot;:&quot;bitexen&quot;},{&quot;name&quot;:&quot;Bitexlive&quot;,&quot;id&quot;:&quot;bitexlive&quot;},{&quot;name&quot;:&quot;Bitfex&quot;,&quot;id&quot;:&quot;bitfex&quot;},{&quot;name&quot;:&quot;Bitfinex&quot;,&quot;id&quot;:&quot;bitfinex&quot;},{&quot;name&quot;:&quot;Bitfinex (Futures)&quot;,&quot;id&quot;:&quot;bitfinex_futures&quot;},{&quot;name&quot;:&quot;bitFlyer&quot;,&quot;id&quot;:&quot;bitflyer&quot;},{&quot;name&quot;:&quot;Bitflyer (Futures)&quot;,&quot;id&quot;:&quot;bitflyer_futures&quot;},{&quot;name&quot;:&quot;Bitforex&quot;,&quot;id&quot;:&quot;bitforex&quot;},{&quot;name&quot;:&quot;Bitforex (Futures)&quot;,&quot;id&quot;:&quot;bitforex_futures&quot;},{&quot;name&quot;:&quot;Bitget&quot;,&quot;id&quot;:&quot;bitget&quot;},{&quot;name&quot;:&quot;Bitget Futures&quot;,&quot;id&quot;:&quot;bitget_futures&quot;},{&quot;name&quot;:&quot;BitHash&quot;,&quot;id&quot;:&quot;bithash&quot;},{&quot;name&quot;:&quot;Bithumb Singapore&quot;,&quot;id&quot;:&quot;bitholic&quot;},{&quot;name&quot;:&quot;Bithumb&quot;,&quot;id&quot;:&quot;bithumb&quot;},{&quot;name&quot;:&quot;Bithumb (Futures)&quot;,&quot;id&quot;:&quot;bithumb_futures&quot;},{&quot;name&quot;:&quot;BitGlobal&quot;,&quot;id&quot;:&quot;bithumb_global&quot;},{&quot;name&quot;:&quot;Bitinfi&quot;,&quot;id&quot;:&quot;bitinfi&quot;},{&quot;name&quot;:&quot;Bitinka.com&quot;,&quot;id&quot;:&quot;bitinka&quot;},{&quot;name&quot;:&quot;BitKonan&quot;,&quot;id&quot;:&quot;bitkonan&quot;},{&quot;name&quot;:&quot;Bitkub&quot;,&quot;id&quot;:&quot;bitkub&quot;},{&quot;name&quot;:&quot;BitMart&quot;,&quot;id&quot;:&quot;bitmart&quot;},{&quot;name&quot;:&quot;AscendEX (BitMax)&quot;,&quot;id&quot;:&quot;bitmax&quot;},{&quot;name&quot;:&quot;AscendEX  (BitMax) (Futures)&quot;,&quot;id&quot;:&quot;bitmax_futures&quot;},{&quot;name&quot;:&quot;Bitmesh&quot;,&quot;id&quot;:&quot;bitmesh&quot;},{&quot;name&quot;:&quot;BitMEX&quot;,&quot;id&quot;:&quot;bitmex&quot;},{&quot;name&quot;:&quot;Bitoffer&quot;,&quot;id&quot;:&quot;bitoffer&quot;},{&quot;name&quot;:&quot;BitOnBay&quot;,&quot;id&quot;:&quot;bitonbay&quot;},{&quot;name&quot;:&quot;BitoPro&quot;,&quot;id&quot;:&quot;bitopro&quot;},{&quot;name&quot;:&quot;Bitpanda Pro&quot;,&quot;id&quot;:&quot;bitpanda&quot;},{&quot;name&quot;:&quot;BitRabbit&quot;,&quot;id&quot;:&quot;bitrabbit&quot;},{&quot;name&quot;:&quot;Bitrue&quot;,&quot;id&quot;:&quot;bitrue&quot;},{&quot;name&quot;:&quot;Bits Blockchain&quot;,&quot;id&quot;:&quot;bits_blockchain&quot;},{&quot;name&quot;:&quot;Bitsdaq&quot;,&quot;id&quot;:&quot;bitsdaq&quot;},{&quot;name&quot;:&quot;Bitso&quot;,&quot;id&quot;:&quot;bitso&quot;},{&quot;name&quot;:&quot;Bitsonic&quot;,&quot;id&quot;:&quot;bitsonic&quot;},{&quot;name&quot;:&quot;Bitstamp&quot;,&quot;id&quot;:&quot;bitstamp&quot;},{&quot;name&quot;:&quot;Bitsten&quot;,&quot;id&quot;:&quot;bitsten&quot;},{&quot;name&quot;:&quot;BitStorage&quot;,&quot;id&quot;:&quot;bitstorage&quot;},{&quot;name&quot;:&quot;Bittrex&quot;,&quot;id&quot;:&quot;bittrex&quot;},{&quot;name&quot;:&quot;Bitubu Exchange&quot;,&quot;id&quot;:&quot;bitubu&quot;},{&quot;name&quot;:&quot;Bitvavo&quot;,&quot;id&quot;:&quot;bitvavo&quot;},{&quot;name&quot;:&quot;BitZ&quot;,&quot;id&quot;:&quot;bit_z&quot;},{&quot;name&quot;:&quot;BitZ (Futures)&quot;,&quot;id&quot;:&quot;bitz_futures&quot;},{&quot;name&quot;:&quot;BKEX&quot;,&quot;id&quot;:&quot;bkex&quot;},{&quot;name&quot;:&quot;bleutrade&quot;,&quot;id&quot;:&quot;bleutrade&quot;},{&quot;name&quot;:&quot;Blockchain.com&quot;,&quot;id&quot;:&quot;blockchain_com&quot;},{&quot;name&quot;:&quot;Blockonix&quot;,&quot;id&quot;:&quot;blockonix&quot;},{&quot;name&quot;:&quot;BOA Exchange&quot;,&quot;id&quot;:&quot;boa&quot;},{&quot;name&quot;:&quot;Braziliex&quot;,&quot;id&quot;:&quot;braziliex&quot;},{&quot;name&quot;:&quot;BSCswap&quot;,&quot;id&quot;:&quot;bscswap&quot;},{&quot;name&quot;:&quot;BTC-Alpha&quot;,&quot;id&quot;:&quot;btc_alpha&quot;},{&quot;name&quot;:&quot;BTCBOX&quot;,&quot;id&quot;:&quot;btcbox&quot;},{&quot;name&quot;:&quot;BTCC&quot;,&quot;id&quot;:&quot;btcc&quot;},{&quot;name&quot;:&quot;Btc Exchange&quot;,&quot;id&quot;:&quot;btc_exchange&quot;},{&quot;name&quot;:&quot;BTCMarkets&quot;,&quot;id&quot;:&quot;btcmarkets&quot;},{&quot;name&quot;:&quot;BTCMEX&quot;,&quot;id&quot;:&quot;btcmex&quot;},{&quot;name&quot;:&quot;BTCNEXT&quot;,&quot;id&quot;:&quot;btcnext&quot;},{&quot;name&quot;:&quot;BTCSquare&quot;,&quot;id&quot;:&quot;btcsquare&quot;},{&quot;name&quot;:&quot;BTC Trade UA&quot;,&quot;id&quot;:&quot;btc_trade_ua&quot;},{&quot;name&quot;:&quot;BtcTurk PRO&quot;,&quot;id&quot;:&quot;btcturk&quot;},{&quot;name&quot;:&quot;BTSE&quot;,&quot;id&quot;:&quot;btse&quot;},{&quot;name&quot;:&quot;BTSE (Futures)&quot;,&quot;id&quot;:&quot;btse_futures&quot;},{&quot;name&quot;:&quot;BurgerSwap&quot;,&quot;id&quot;:&quot;burgerswap&quot;},{&quot;name&quot;:&quot;BuyUcoin&quot;,&quot;id&quot;:&quot;buyucoin&quot;},{&quot;name&quot;:&quot;Bvnex&quot;,&quot;id&quot;:&quot;bvnex&quot;},{&quot;name&quot;:&quot;BW.com&quot;,&quot;id&quot;:&quot;bw&quot;},{&quot;name&quot;:&quot;Bybit&quot;,&quot;id&quot;:&quot;bybit&quot;},{&quot;name&quot;:&quot;Bybit (spot)&quot;,&quot;id&quot;:&quot;bybit_spot&quot;},{&quot;name&quot;:&quot;C2CX&quot;,&quot;id&quot;:&quot;c2cx&quot;},{&quot;name&quot;:&quot;Catex&quot;,&quot;id&quot;:&quot;catex&quot;},{&quot;name&quot;:&quot;CBX&quot;,&quot;id&quot;:&quot;cbx&quot;},{&quot;name&quot;:&quot;C-CEX&quot;,&quot;id&quot;:&quot;ccex&quot;},{&quot;name&quot;:&quot;CEX.IO&quot;,&quot;id&quot;:&quot;cex&quot;},{&quot;name&quot;:&quot;ChainEX&quot;,&quot;id&quot;:&quot;chainex&quot;},{&quot;name&quot;:&quot;Changelly PRO&quot;,&quot;id&quot;:&quot;changelly&quot;},{&quot;name&quot;:&quot;CherrySwap&quot;,&quot;id&quot;:&quot;cherryswap&quot;},{&quot;name&quot;:&quot;Chiliz&quot;,&quot;id&quot;:&quot;chiliz&quot;},{&quot;name&quot;:&quot;CITEX&quot;,&quot;id&quot;:&quot;citex&quot;},{&quot;name&quot;:&quot;Clipper (Ethereum)&quot;,&quot;id&quot;:&quot;clipper_ethereum&quot;},{&quot;name&quot;:&quot;CME Bitcoin Futures&quot;,&quot;id&quot;:&quot;cme_futures&quot;},{&quot;name&quot;:&quot;CoinAsset&quot;,&quot;id&quot;:&quot;coinasset&quot;},{&quot;name&quot;:&quot;CoinBene&quot;,&quot;id&quot;:&quot;coinbene&quot;},{&quot;name&quot;:&quot;COINBIG&quot;,&quot;id&quot;:&quot;coinbig&quot;},{&quot;name&quot;:&quot;Coinbit&quot;,&quot;id&quot;:&quot;coinbit&quot;},{&quot;name&quot;:&quot;Coincheck&quot;,&quot;id&quot;:&quot;coincheck&quot;},{&quot;name&quot;:&quot;CoinDCX&quot;,&quot;id&quot;:&quot;coindcx&quot;},{&quot;name&quot;:&quot;Coindeal&quot;,&quot;id&quot;:&quot;coindeal&quot;},{&quot;name&quot;:&quot;CoinDirect&quot;,&quot;id&quot;:&quot;coindirect&quot;},{&quot;name&quot;:&quot;Coineal&quot;,&quot;id&quot;:&quot;coineal&quot;},{&quot;name&quot;:&quot;CoinEgg&quot;,&quot;id&quot;:&quot;coin_egg&quot;},{&quot;name&quot;:&quot;CoinEx&quot;,&quot;id&quot;:&quot;coinex&quot;},{&quot;name&quot;:&quot;Coinfalcon&quot;,&quot;id&quot;:&quot;coinfalcon&quot;},{&quot;name&quot;:&quot;Coinfield&quot;,&quot;id&quot;:&quot;coinfield&quot;},{&quot;name&quot;:&quot;CoinFLEX&quot;,&quot;id&quot;:&quot;coinflex&quot;},{&quot;name&quot;:&quot;CoinFLEX (Futures)&quot;,&quot;id&quot;:&quot;coinflex_futures&quot;},{&quot;name&quot;:&quot;Coinfloor&quot;,&quot;id&quot;:&quot;coinfloor&quot;},{&quot;name&quot;:&quot;Coingi&quot;,&quot;id&quot;:&quot;coingi&quot;},{&quot;name&quot;:&quot;CoinHe&quot;,&quot;id&quot;:&quot;coinhe&quot;},{&quot;name&quot;:&quot;Coinhub&quot;,&quot;id&quot;:&quot;coinhub&quot;},{&quot;name&quot;:&quot;CoinJar Exchange&quot;,&quot;id&quot;:&quot;coinjar&quot;},{&quot;name&quot;:&quot;Coinlim&quot;,&quot;id&quot;:&quot;coinlim&quot;},{&quot;name&quot;:&quot;Coinlist&quot;,&quot;id&quot;:&quot;coinlist&quot;},{&quot;name&quot;:&quot;CoinMargin&quot;,&quot;id&quot;:&quot;coinmargin&quot;},{&quot;name&quot;:&quot;CoinMetro&quot;,&quot;id&quot;:&quot;coin_metro&quot;},{&quot;name&quot;:&quot;Coinone&quot;,&quot;id&quot;:&quot;coinone&quot;},{&quot;name&quot;:&quot;Coinpark&quot;,&quot;id&quot;:&quot;coinpark&quot;},{&quot;name&quot;:&quot;Coinplace&quot;,&quot;id&quot;:&quot;coinplace&quot;},{&quot;name&quot;:&quot;Coinsbank&quot;,&quot;id&quot;:&quot;coinsbank&quot;},{&quot;name&quot;:&quot;Coinsbit&quot;,&quot;id&quot;:&quot;coinsbit&quot;},{&quot;name&quot;:&quot;Coinsuper&quot;,&quot;id&quot;:&quot;coinsuper&quot;},{&quot;name&quot;:&quot;CoinTiger&quot;,&quot;id&quot;:&quot;cointiger&quot;},{&quot;name&quot;:&quot;CoinTiger (Futures)&quot;,&quot;id&quot;:&quot;cointiger_futures&quot;},{&quot;name&quot;:&quot;COINX.PRO&quot;,&quot;id&quot;:&quot;coinxpro&quot;},{&quot;name&quot;:&quot;Coinzo&quot;,&quot;id&quot;:&quot;coinzo&quot;},{&quot;name&quot;:&quot;Coinzoom&quot;,&quot;id&quot;:&quot;coinzoom&quot;},{&quot;name&quot;:&quot;ComethSwap&quot;,&quot;id&quot;:&quot;comethswap&quot;},{&quot;name&quot;:&quot;Compound Finance&quot;,&quot;id&quot;:&quot;compound_finance&quot;},{&quot;name&quot;:&quot;C-Patex&quot;,&quot;id&quot;:&quot;c_patex&quot;},{&quot;name&quot;:&quot;CPDAX&quot;,&quot;id&quot;:&quot;cpdax&quot;},{&quot;name&quot;:&quot;CREX24&quot;,&quot;id&quot;:&quot;crex24&quot;},{&quot;name&quot;:&quot;CRXzone&quot;,&quot;id&quot;:&quot;crxzone&quot;},{&quot;name&quot;:&quot;CryptalDash&quot;,&quot;id&quot;:&quot;cryptaldash&quot;},{&quot;name&quot;:&quot;Cryptex&quot;,&quot;id&quot;:&quot;cryptex&quot;},{&quot;name&quot;:&quot;Cryptlocex&quot;,&quot;id&quot;:&quot;cryptlocex&quot;},{&quot;name&quot;:&quot;Crypto.com Exchange&quot;,&quot;id&quot;:&quot;crypto_com&quot;},{&quot;name&quot;:&quot;Crypto.com Exchange (Futures)&quot;,&quot;id&quot;:&quot;crypto_com_futures&quot;},{&quot;name&quot;:&quot;Cryptology&quot;,&quot;id&quot;:&quot;cryptology&quot;},{&quot;name&quot;:&quot;CryTrEx&quot;,&quot;id&quot;:&quot;crytrex&quot;},{&quot;name&quot;:&quot;C-Trade&quot;,&quot;id&quot;:&quot;c_trade&quot;},{&quot;name&quot;:&quot;Currency.com&quot;,&quot;id&quot;:&quot;currency&quot;},{&quot;name&quot;:&quot;Curve Finance&quot;,&quot;id&quot;:&quot;curve&quot;},{&quot;name&quot;:&quot;Cybex DEX&quot;,&quot;id&quot;:&quot;cybex&quot;},{&quot;name&quot;:&quot;Darb Finance&quot;,&quot;id&quot;:&quot;darb_finance&quot;},{&quot;name&quot;:&quot;Daybit&quot;,&quot;id&quot;:&quot;daybit&quot;},{&quot;name&quot;:&quot;Dcoin&quot;,&quot;id&quot;:&quot;dcoin&quot;},{&quot;name&quot;:&quot;DDEX&quot;,&quot;id&quot;:&quot;ddex&quot;},{&quot;name&quot;:&quot;Decoin&quot;,&quot;id&quot;:&quot;decoin&quot;},{&quot;name&quot;:&quot;Defi Kingdoms&quot;,&quot;id&quot;:&quot;defi_kingdoms&quot;},{&quot;name&quot;:&quot;DeFi Swap&quot;,&quot;id&quot;:&quot;defi_swap&quot;},{&quot;name&quot;:&quot;Delta Exchange (Futures)&quot;,&quot;id&quot;:&quot;delta_futures&quot;},{&quot;name&quot;:&quot;Delta Exchange&quot;,&quot;id&quot;:&quot;delta_spot&quot;},{&quot;name&quot;:&quot;Demex&quot;,&quot;id&quot;:&quot;dem_exchange&quot;},{&quot;name&quot;:&quot;Deribit&quot;,&quot;id&quot;:&quot;deribit&quot;},{&quot;name&quot;:&quot;Deversifi &quot;,&quot;id&quot;:&quot;deversifi&quot;},{&quot;name&quot;:&quot;dex.blue&quot;,&quot;id&quot;:&quot;dex_blue&quot;},{&quot;name&quot;:&quot;Dex-Trade&quot;,&quot;id&quot;:&quot;dextrade&quot;},{&quot;name&quot;:&quot;DFX&quot;,&quot;id&quot;:&quot;dfx&quot;},{&quot;name&quot;:&quot;DFX (Polygon)&quot;,&quot;id&quot;:&quot;dfx_polygon&quot;},{&quot;name&quot;:&quot;Dfyn&quot;,&quot;id&quot;:&quot;dfyn&quot;},{&quot;name&quot;:&quot;Digifinex&quot;,&quot;id&quot;:&quot;digifinex&quot;},{&quot;name&quot;:&quot;DMM (Ethereum)&quot;,&quot;id&quot;:&quot;dmm&quot;},{&quot;name&quot;:&quot;DMM (Avalanche)&quot;,&quot;id&quot;:&quot;dmm_avalanche&quot;},{&quot;name&quot;:&quot;DMM (BSC)&quot;,&quot;id&quot;:&quot;dmm_bsc&quot;},{&quot;name&quot;:&quot;DMM (Polygon)&quot;,&quot;id&quot;:&quot;dmm_polygon&quot;},{&quot;name&quot;:&quot;Dobitrade&quot;,&quot;id&quot;:&quot;dobitrade&quot;},{&quot;name&quot;:&quot;DODO&quot;,&quot;id&quot;:&quot;dodo&quot;},{&quot;name&quot;:&quot;Dodo (Arbitrum)&quot;,&quot;id&quot;:&quot;dodo_arbitrum&quot;},{&quot;name&quot;:&quot;Dodo BSC&quot;,&quot;id&quot;:&quot;dodo_bsc&quot;},{&quot;name&quot;:&quot;Dodo (Polygon)&quot;,&quot;id&quot;:&quot;dodo_polygon&quot;},{&quot;name&quot;:&quot;Dolomite&quot;,&quot;id&quot;:&quot;dolomite&quot;},{&quot;name&quot;:&quot;Dove Wallet&quot;,&quot;id&quot;:&quot;dove_wallet&quot;},{&quot;name&quot;:&quot;DragonEx&quot;,&quot;id&quot;:&quot;dragonex&quot;},{&quot;name&quot;:&quot;DSX Global&quot;,&quot;id&quot;:&quot;dsx&quot;},{&quot;name&quot;:&quot;DueDEX&quot;,&quot;id&quot;:&quot;duedex&quot;},{&quot;name&quot;:&quot;dYdX&quot;,&quot;id&quot;:&quot;dydx&quot;},{&quot;name&quot;:&quot;dYdX Perpetual&quot;,&quot;id&quot;:&quot;dydx_perpetual&quot;},{&quot;name&quot;:&quot;Ecxx&quot;,&quot;id&quot;:&quot;ecxx&quot;},{&quot;name&quot;:&quot;Elitex&quot;,&quot;id&quot;:&quot;elitex&quot;},{&quot;name&quot;:&quot;Emirex&quot;,&quot;id&quot;:&quot;emirex&quot;},{&quot;name&quot;:&quot;EQONEX&quot;,&quot;id&quot;:&quot;equos&quot;},{&quot;name&quot;:&quot;EQONEX (Perpetual)&quot;,&quot;id&quot;:&quot;equos_perpetual&quot;},{&quot;name&quot;:&quot;Eterbase&quot;,&quot;id&quot;:&quot;eterbase&quot;},{&quot;name&quot;:&quot;EtherFlyer&quot;,&quot;id&quot;:&quot;etherflyer&quot;},{&quot;name&quot;:&quot;Ethex&quot;,&quot;id&quot;:&quot;ethex&quot;},{&quot;name&quot;:&quot;eToroX&quot;,&quot;id&quot;:&quot;etorox&quot;},{&quot;name&quot;:&quot;Everbloom&quot;,&quot;id&quot;:&quot;everbloom&quot;},{&quot;name&quot;:&quot;ExMarkets&quot;,&quot;id&quot;:&quot;exmarkets&quot;},{&quot;name&quot;:&quot;EXMO&quot;,&quot;id&quot;:&quot;exmo&quot;},{&quot;name&quot;:&quot;EXNCE&quot;,&quot;id&quot;:&quot;exnce&quot;},{&quot;name&quot;:&quot;Exrates&quot;,&quot;id&quot;:&quot;exrates&quot;},{&quot;name&quot;:&quot;FatBTC&quot;,&quot;id&quot;:&quot;fatbtc&quot;},{&quot;name&quot;:&quot;FEX&quot;,&quot;id&quot;:&quot;fex&quot;},{&quot;name&quot;:&quot;FinanceX&quot;,&quot;id&quot;:&quot;financex&quot;},{&quot;name&quot;:&quot;FinexBox&quot;,&quot;id&quot;:&quot;finexbox&quot;},{&quot;name&quot;:&quot;Firebird Finance (Polygon)&quot;,&quot;id&quot;:&quot;firebird_finance_polygon&quot;},{&quot;name&quot;:&quot;Float SV&quot;,&quot;id&quot;:&quot;floatsv&quot;},{&quot;name&quot;:&quot;Flybit&quot;,&quot;id&quot;:&quot;flybit&quot;},{&quot;name&quot;:&quot;ForkDelta&quot;,&quot;id&quot;:&quot;forkdelta&quot;},{&quot;name&quot;:&quot;Freiexchange&quot;,&quot;id&quot;:&quot;freiexchange&quot;},{&quot;name&quot;:&quot;FTX (Derivatives)&quot;,&quot;id&quot;:&quot;ftx&quot;},{&quot;name&quot;:&quot;FTX&quot;,&quot;id&quot;:&quot;ftx_spot&quot;},{&quot;name&quot;:&quot;FTX.US&quot;,&quot;id&quot;:&quot;ftx_us&quot;},{&quot;name&quot;:&quot;Futureswap&quot;,&quot;id&quot;:&quot;futureswap&quot;},{&quot;name&quot;:&quot;Gate.io&quot;,&quot;id&quot;:&quot;gate&quot;},{&quot;name&quot;:&quot;Gate.io (Futures)&quot;,&quot;id&quot;:&quot;gate_futures&quot;},{&quot;name&quot;:&quot;Global Blockchain Exchange&quot;,&quot;id&quot;:&quot;gbx&quot;},{&quot;name&quot;:&quot;GDAC&quot;,&quot;id&quot;:&quot;gdac&quot;},{&quot;name&quot;:&quot;Coinbase Exchange&quot;,&quot;id&quot;:&quot;gdax&quot;},{&quot;name&quot;:&quot;Gemini&quot;,&quot;id&quot;:&quot;gemini&quot;},{&quot;name&quot;:&quot;GetBTC&quot;,&quot;id&quot;:&quot;getbtc&quot;},{&quot;name&quot;:&quot;GMO Japan&quot;,&quot;id&quot;:&quot;gmo_japan&quot;},{&quot;name&quot;:&quot;GMO Japan (Futures)&quot;,&quot;id&quot;:&quot;gmo_japan_futures&quot;},{&quot;name&quot;:&quot;Gobaba&quot;,&quot;id&quot;:&quot;gobaba&quot;},{&quot;name&quot;:&quot;GokuMarket&quot;,&quot;id&quot;:&quot;goku&quot;},{&quot;name&quot;:&quot;GoPax&quot;,&quot;id&quot;:&quot;gopax&quot;},{&quot;name&quot;:&quot;Graviex&quot;,&quot;id&quot;:&quot;graviex&quot;},{&quot;name&quot;:&quot;Hanbitco&quot;,&quot;id&quot;:&quot;hanbitco&quot;},{&quot;name&quot;:&quot;BHEX&quot;,&quot;id&quot;:&quot;hbtc&quot;},{&quot;name&quot;:&quot;BHEX (Futures)&quot;,&quot;id&quot;:&quot;hbtc_futures&quot;},{&quot;name&quot;:&quot;Hb.top&quot;,&quot;id&quot;:&quot;hb_top&quot;},{&quot;name&quot;:&quot;HitBTC&quot;,&quot;id&quot;:&quot;hitbtc&quot;},{&quot;name&quot;:&quot;Honeyswap&quot;,&quot;id&quot;:&quot;honeyswap&quot;},{&quot;name&quot;:&quot;Honeyswap (Polygon)&quot;,&quot;id&quot;:&quot;honeyswap_polygon&quot;},{&quot;name&quot;:&quot;Hoo.com&quot;,&quot;id&quot;:&quot;hoo&quot;},{&quot;name&quot;:&quot;Hopex&quot;,&quot;id&quot;:&quot;hopex&quot;},{&quot;name&quot;:&quot;Hotbit&quot;,&quot;id&quot;:&quot;hotbit&quot;},{&quot;name&quot;:&quot;HPX&quot;,&quot;id&quot;:&quot;hpx&quot;},{&quot;name&quot;:&quot;Hubi&quot;,&quot;id&quot;:&quot;hubi&quot;},{&quot;name&quot;:&quot;Huobi Global&quot;,&quot;id&quot;:&quot;huobi&quot;},{&quot;name&quot;:&quot;Huobi Futures&quot;,&quot;id&quot;:&quot;huobi_dm&quot;},{&quot;name&quot;:&quot;Huobi Indonesia&quot;,&quot;id&quot;:&quot;huobi_id&quot;},{&quot;name&quot;:&quot;Huobi Japan&quot;,&quot;id&quot;:&quot;huobi_japan&quot;},{&quot;name&quot;:&quot;Huobi Korea&quot;,&quot;id&quot;:&quot;huobi_korea&quot;},{&quot;name&quot;:&quot;Huobi Thailand&quot;,&quot;id&quot;:&quot;huobi_thailand&quot;},{&quot;name&quot;:&quot;Ice3x&quot;,&quot;id&quot;:&quot;ice3x&quot;},{&quot;name&quot;:&quot;IDCM&quot;,&quot;id&quot;:&quot;idcm&quot;},{&quot;name&quot;:&quot;Idex&quot;,&quot;id&quot;:&quot;idex&quot;},{&quot;name&quot;:&quot;IncoreX&quot;,&quot;id&quot;:&quot;incorex&quot;},{&quot;name&quot;:&quot;Independent Reserve&quot;,&quot;id&quot;:&quot;independent_reserve&quot;},{&quot;name&quot;:&quot;Indodax&quot;,&quot;id&quot;:&quot;indodax&quot;},{&quot;name&quot;:&quot;Infinity Coin&quot;,&quot;id&quot;:&quot;infinity_coin&quot;},{&quot;name&quot;:&quot;Instant Bitex&quot;,&quot;id&quot;:&quot;instantbitex&quot;},{&quot;name&quot;:&quot;IQFinex&quot;,&quot;id&quot;:&quot;iqfinex&quot;},{&quot;name&quot;:&quot;itBit&quot;,&quot;id&quot;:&quot;itbit&quot;},{&quot;name&quot;:&quot;Binance JEX&quot;,&quot;id&quot;:&quot;jex&quot;},{&quot;name&quot;:&quot;Binance JEX (Futures)&quot;,&quot;id&quot;:&quot;jex_futures&quot;},{&quot;name&quot;:&quot;Joyso&quot;,&quot;id&quot;:&quot;joyso&quot;},{&quot;name&quot;:&quot;Julswap&quot;,&quot;id&quot;:&quot;julswap&quot;},{&quot;name&quot;:&quot;SunSwap&quot;,&quot;id&quot;:&quot;justswap&quot;},{&quot;name&quot;:&quot;Kaidex&quot;,&quot;id&quot;:&quot;kaidex&quot;},{&quot;name&quot;:&quot;Katana&quot;,&quot;id&quot;:&quot;katana&quot;},{&quot;name&quot;:&quot;Kava Swap&quot;,&quot;id&quot;:&quot;kava&quot;},{&quot;name&quot;:&quot;KickEX&quot;,&quot;id&quot;:&quot;kickex&quot;},{&quot;name&quot;:&quot;KKCoin&quot;,&quot;id&quot;:&quot;kkcoin&quot;},{&quot;name&quot;:&quot;KKEX&quot;,&quot;id&quot;:&quot;k_kex&quot;},{&quot;name&quot;:&quot;Korbit&quot;,&quot;id&quot;:&quot;korbit&quot;},{&quot;name&quot;:&quot;Kraken&quot;,&quot;id&quot;:&quot;kraken&quot;},{&quot;name&quot;:&quot;Kraken (Futures)&quot;,&quot;id&quot;:&quot;kraken_futures&quot;},{&quot;name&quot;:&quot;KuCoin&quot;,&quot;id&quot;:&quot;kucoin&quot;},{&quot;name&quot;:&quot;KuCoin Futures&quot;,&quot;id&quot;:&quot;kumex&quot;},{&quot;name&quot;:&quot;Kuna Exchange&quot;,&quot;id&quot;:&quot;kuna&quot;},{&quot;name&quot;:&quot;Kuswap&quot;,&quot;id&quot;:&quot;kuswap&quot;},{&quot;name&quot;:&quot;Kyber Network&quot;,&quot;id&quot;:&quot;kyber_network&quot;},{&quot;name&quot;:&quot;LakeBTC&quot;,&quot;id&quot;:&quot;lakebtc&quot;},{&quot;name&quot;:&quot;LATOKEN&quot;,&quot;id&quot;:&quot;latoken&quot;},{&quot;name&quot;:&quot;LBank&quot;,&quot;id&quot;:&quot;lbank&quot;},{&quot;name&quot;:&quot;LCX Exchange&quot;,&quot;id&quot;:&quot;lcx&quot;},{&quot;name&quot;:&quot;Leverj&quot;,&quot;id&quot;:&quot;leverj&quot;},{&quot;name&quot;:&quot;Levinswap (xDai)&quot;,&quot;id&quot;:&quot;levinswap_xdai&quot;},{&quot;name&quot;:&quot;Liquid Perpetuals&quot;,&quot;id&quot;:&quot;liquid_derivatives&quot;},{&quot;name&quot;:&quot;LocalTrade&quot;,&quot;id&quot;:&quot;localtrade&quot;},{&quot;name&quot;:&quot;Loopring&quot;,&quot;id&quot;:&quot;loopring&quot;},{&quot;name&quot;:&quot;Loopring AMM&quot;,&quot;id&quot;:&quot;loopring_amm&quot;},{&quot;name&quot;:&quot;Luaswap&quot;,&quot;id&quot;:&quot;luaswap&quot;},{&quot;name&quot;:&quot;Lucent&quot;,&quot;id&quot;:&quot;lucent&quot;},{&quot;name&quot;:&quot;Lukki&quot;,&quot;id&quot;:&quot;lukki&quot;},{&quot;name&quot;:&quot;Luno&quot;,&quot;id&quot;:&quot;luno&quot;},{&quot;name&quot;:&quot;Lykke&quot;,&quot;id&quot;:&quot;lykke&quot;},{&quot;name&quot;:&quot;Max Maicoin&quot;,&quot;id&quot;:&quot;max_maicoin&quot;},{&quot;name&quot;:&quot;MCDEX (Arbitrum)&quot;,&quot;id&quot;:&quot;mcdex&quot;},{&quot;name&quot;:&quot;MCDEX (BSC)&quot;,&quot;id&quot;:&quot;mcdex_bsc&quot;},{&quot;name&quot;:&quot;Mdex&quot;,&quot;id&quot;:&quot;mdex&quot;},{&quot;name&quot;:&quot;Mdex BSC&quot;,&quot;id&quot;:&quot;mdex_bsc&quot;},{&quot;name&quot;:&quot;Mercado Bitcoin&quot;,&quot;id&quot;:&quot;mercado_bitcoin&quot;},{&quot;name&quot;:&quot;Mercatox&quot;,&quot;id&quot;:&quot;mercatox&quot;},{&quot;name&quot;:&quot;MercuriEx&quot;,&quot;id&quot;:&quot;mercuriex&quot;},{&quot;name&quot;:&quot;Mimo&quot;,&quot;id&quot;:&quot;mimo&quot;},{&quot;name&quot;:&quot;Terraswap&quot;,&quot;id&quot;:&quot;mirror&quot;},{&quot;name&quot;:&quot;Mooniswap&quot;,&quot;id&quot;:&quot;mooniswap&quot;},{&quot;name&quot;:&quot;Multi.io&quot;,&quot;id&quot;:&quot;multi&quot;},{&quot;name&quot;:&quot;MEXC Global&quot;,&quot;id&quot;:&quot;mxc&quot;},{&quot;name&quot;:&quot;MEXC Global (Futures)&quot;,&quot;id&quot;:&quot;mxc_futures&quot;},{&quot;name&quot;:&quot;MCS&quot;,&quot;id&quot;:&quot;mycoinstory&quot;},{&quot;name&quot;:&quot;Namebase&quot;,&quot;id&quot;:&quot;namebase&quot;},{&quot;name&quot;:&quot;Nami.Exchange&quot;,&quot;id&quot;:&quot;nami_exchange&quot;},{&quot;name&quot;:&quot;Nanu Exchange&quot;,&quot;id&quot;:&quot;nanu_exchange&quot;},{&quot;name&quot;:&quot;Narkasa&quot;,&quot;id&quot;:&quot;narkasa&quot;},{&quot;name&quot;:&quot;Nash&quot;,&quot;id&quot;:&quot;nash&quot;},{&quot;name&quot;:&quot;Neblidex&quot;,&quot;id&quot;:&quot;neblidex&quot;},{&quot;name&quot;:&quot;Negociecoins&quot;,&quot;id&quot;:&quot;negociecoins&quot;},{&quot;name&quot;:&quot;Neraex&quot;,&quot;id&quot;:&quot;neraex&quot;},{&quot;name&quot;:&quot;Newdex&quot;,&quot;id&quot;:&quot;newdex&quot;},{&quot;name&quot;:&quot;Nexus Mutual&quot;,&quot;id&quot;:&quot;nexus_mutual&quot;},{&quot;name&quot;:&quot;NiceHash&quot;,&quot;id&quot;:&quot;nice_hash&quot;},{&quot;name&quot;:&quot;Niftex&quot;,&quot;id&quot;:&quot;niftex&quot;},{&quot;name&quot;:&quot;NLexch&quot;,&quot;id&quot;:&quot;nlexch&quot;},{&quot;name&quot;:&quot;Nominex&quot;,&quot;id&quot;:&quot;nominex&quot;},{&quot;name&quot;:&quot;NovaDAX&quot;,&quot;id&quot;:&quot;novadax&quot;},{&quot;name&quot;:&quot;OasisDEX&quot;,&quot;id&quot;:&quot;oasis_trade&quot;},{&quot;name&quot;:&quot;Oceanex&quot;,&quot;id&quot;:&quot;oceanex&quot;},{&quot;name&quot;:&quot;Okcoin&quot;,&quot;id&quot;:&quot;okcoin&quot;},{&quot;name&quot;:&quot;OKEx&quot;,&quot;id&quot;:&quot;okex&quot;},{&quot;name&quot;:&quot;OKEx (Futures)&quot;,&quot;id&quot;:&quot;okex_swap&quot;},{&quot;name&quot;:&quot;Omgfin&quot;,&quot;id&quot;:&quot;omgfin&quot;},{&quot;name&quot;:&quot;OmniTrade&quot;,&quot;id&quot;:&quot;omnitrade&quot;},{&quot;name&quot;:&quot;1inch&quot;,&quot;id&quot;:&quot;one_inch&quot;},{&quot;name&quot;:&quot;1inch Liquidity Protocol&quot;,&quot;id&quot;:&quot;one_inch_liquidity_protocol&quot;},{&quot;name&quot;:&quot;1inch Liquidity Protocol (BSC)&quot;,&quot;id&quot;:&quot;one_inch_liquidity_protocol_bsc&quot;},{&quot;name&quot;:&quot;Oolongswap&quot;,&quot;id&quot;:&quot;oolongswap&quot;},{&quot;name&quot;:&quot;OpenOcean&quot;,&quot;id&quot;:&quot;openocean_finance&quot;},{&quot;name&quot;:&quot;Orca&quot;,&quot;id&quot;:&quot;orca&quot;},{&quot;name&quot;:&quot;Orderbook.io&quot;,&quot;id&quot;:&quot;orderbook&quot;},{&quot;name&quot;:&quot;Osmosis&quot;,&quot;id&quot;:&quot;osmosis&quot;},{&quot;name&quot;:&quot;OTCBTC&quot;,&quot;id&quot;:&quot;otcbtc&quot;},{&quot;name&quot;:&quot;Ovex&quot;,&quot;id&quot;:&quot;ovex&quot;},{&quot;name&quot;:&quot;P2PB2B&quot;,&quot;id&quot;:&quot;p2pb2b&quot;},{&quot;name&quot;:&quot;Paintswap&quot;,&quot;id&quot;:&quot;paintswap&quot;},{&quot;name&quot;:&quot;PancakeSwap (v2)&quot;,&quot;id&quot;:&quot;pancakeswap_new&quot;},{&quot;name&quot;:&quot;Pancakeswap (Others)&quot;,&quot;id&quot;:&quot;pancakeswap_others&quot;},{&quot;name&quot;:&quot;PancakeSwap (v1)&quot;,&quot;id&quot;:&quot;pancakeswap_v1&quot;},{&quot;name&quot;:&quot;Pangolin&quot;,&quot;id&quot;:&quot;pangolin&quot;},{&quot;name&quot;:&quot;PantherSwap&quot;,&quot;id&quot;:&quot;pantherswap&quot;},{&quot;name&quot;:&quot;Paribu&quot;,&quot;id&quot;:&quot;paribu&quot;},{&quot;name&quot;:&quot;Paro Exchange&quot;,&quot;id&quot;:&quot;paroexchange&quot;},{&quot;name&quot;:&quot;Paymium&quot;,&quot;id&quot;:&quot;paymium&quot;},{&quot;name&quot;:&quot;Perpetual Protocol&quot;,&quot;id&quot;:&quot;perpetual_protocol&quot;},{&quot;name&quot;:&quot;Phemex&quot;,&quot;id&quot;:&quot;phemex&quot;},{&quot;name&quot;:&quot;Phemex (Futures)&quot;,&quot;id&quot;:&quot;phemex_futures&quot;},{&quot;name&quot;:&quot;PinkSwap&quot;,&quot;id&quot;:&quot;pinkswap&quot;},{&quot;name&quot;:&quot;Polkaswap&quot;,&quot;id&quot;:&quot;polkaswap&quot;},{&quot;name&quot;:&quot;Poloniex&quot;,&quot;id&quot;:&quot;poloniex&quot;},{&quot;name&quot;:&quot;Poloniex Futures&quot;,&quot;id&quot;:&quot;poloniex_futures&quot;},{&quot;name&quot;:&quot;Polyient Dex&quot;,&quot;id&quot;:&quot;polyient_dex&quot;},{&quot;name&quot;:&quot;PolyZap&quot;,&quot;id&quot;:&quot;polyzap&quot;},{&quot;name&quot;:&quot;Prime XBT&quot;,&quot;id&quot;:&quot;prime_xbt&quot;},{&quot;name&quot;:&quot;ProBit Global&quot;,&quot;id&quot;:&quot;probit&quot;},{&quot;name&quot;:&quot;Probit (Korea)&quot;,&quot;id&quot;:&quot;probit_kr&quot;},{&quot;name&quot;:&quot;qTrade&quot;,&quot;id&quot;:&quot;qtrade&quot;},{&quot;name&quot;:&quot;Quickswap&quot;,&quot;id&quot;:&quot;quickswap&quot;},{&quot;name&quot;:&quot;Quipuswap&quot;,&quot;id&quot;:&quot;quipuswap&quot;},{&quot;name&quot;:&quot;Liquid&quot;,&quot;id&quot;:&quot;quoine&quot;},{&quot;name&quot;:&quot;Radar Relay&quot;,&quot;id&quot;:&quot;radar_relay&quot;},{&quot;name&quot;:&quot;Raydium&quot;,&quot;id&quot;:&quot;raydium&quot;},{&quot;name&quot;:&quot;Ref Finance&quot;,&quot;id&quot;:&quot;ref_finance&quot;},{&quot;name&quot;:&quot;Resfinex&quot;,&quot;id&quot;:&quot;resfinex&quot;},{&quot;name&quot;:&quot;Rfinex&quot;,&quot;id&quot;:&quot;rfinex&quot;},{&quot;name&quot;:&quot;Saber&quot;,&quot;id&quot;:&quot;saber&quot;},{&quot;name&quot;:&quot;SafeTrade&quot;,&quot;id&quot;:&quot;safe_trade&quot;},{&quot;name&quot;:&quot;SakeSwap&quot;,&quot;id&quot;:&quot;sakeswap&quot;},{&quot;name&quot;:&quot;Sashimiswap&quot;,&quot;id&quot;:&quot;sashimiswap&quot;},{&quot;name&quot;:&quot;SatoExchange&quot;,&quot;id&quot;:&quot;satoexchange&quot;},{&quot;name&quot;:&quot;SecondBTC&quot;,&quot;id&quot;:&quot;secondbtc&quot;},{&quot;name&quot;:&quot;SecretSwap&quot;,&quot;id&quot;:&quot;secretswap&quot;},{&quot;name&quot;:&quot;Serum DEX&quot;,&quot;id&quot;:&quot;serum_dex&quot;},{&quot;name&quot;:&quot;Shibaswap&quot;,&quot;id&quot;:&quot;shibaswap&quot;},{&quot;name&quot;:&quot;Shortex&quot;,&quot;id&quot;:&quot;shortex&quot;},{&quot;name&quot;:&quot;Siennaswap&quot;,&quot;id&quot;:&quot;siennaswap&quot;},{&quot;name&quot;:&quot;Simex&quot;,&quot;id&quot;:&quot;simex&quot;},{&quot;name&quot;:&quot;SINEGY&quot;,&quot;id&quot;:&quot;sinegy&quot;},{&quot;name&quot;:&quot;Sistemkoin&quot;,&quot;id&quot;:&quot;sistemkoin&quot;},{&quot;name&quot;:&quot;6x&quot;,&quot;id&quot;:&quot;six_x&quot;},{&quot;name&quot;:&quot;Solarbeam&quot;,&quot;id&quot;:&quot;solarbeam&quot;},{&quot;name&quot;:&quot;SouthXchange&quot;,&quot;id&quot;:&quot;south_xchange&quot;},{&quot;name&quot;:&quot;SpiritSwap&quot;,&quot;id&quot;:&quot;spiritswap&quot;},{&quot;name&quot;:&quot;Spookyswap&quot;,&quot;id&quot;:&quot;spookyswap&quot;},{&quot;name&quot;:&quot;StakeCube Exchange&quot;,&quot;id&quot;:&quot;stake_cube&quot;},{&quot;name&quot;:&quot;StellarTerm&quot;,&quot;id&quot;:&quot;stellar_term&quot;},{&quot;name&quot;:&quot;STEX&quot;,&quot;id&quot;:&quot;stocks_exchange&quot;},{&quot;name&quot;:&quot;Stormgain&quot;,&quot;id&quot;:&quot;stormgain&quot;},{&quot;name&quot;:&quot;Stormgain Futures&quot;,&quot;id&quot;:&quot;stormgain_futures&quot;},{&quot;name&quot;:&quot;Sushiswap&quot;,&quot;id&quot;:&quot;sushiswap&quot;},{&quot;name&quot;:&quot;Sushiswap (Arbitrum One)&quot;,&quot;id&quot;:&quot;sushiswap_arbitrum&quot;},{&quot;name&quot;:&quot;Sushiswap (BSC)&quot;,&quot;id&quot;:&quot;sushiswap_bsc&quot;},{&quot;name&quot;:&quot;Sushiswap Celo&quot;,&quot;id&quot;:&quot;sushiswap_celo&quot;},{&quot;name&quot;:&quot;Sushiswap (Fantom)&quot;,&quot;id&quot;:&quot;sushiswap_fantom&quot;},{&quot;name&quot;:&quot;Sushiswap (Harmony)&quot;,&quot;id&quot;:&quot;sushiswap_harmony&quot;},{&quot;name&quot;:&quot;Sushiswap (Polygon POS)&quot;,&quot;id&quot;:&quot;sushiswap_polygon&quot;},{&quot;name&quot;:&quot;Sushiswap (xDai)&quot;,&quot;id&quot;:&quot;sushiswap_xdai&quot;},{&quot;name&quot;:&quot;Swapr&quot;,&quot;id&quot;:&quot;swapr&quot;},{&quot;name&quot;:&quot;Swapr (Arbitrum)&quot;,&quot;id&quot;:&quot;swapr_arbitrum&quot;},{&quot;name&quot;:&quot;Swapr (Ethereum)&quot;,&quot;id&quot;:&quot;swapr_ethereum&quot;},{&quot;name&quot;:&quot;Swiftex&quot;,&quot;id&quot;:&quot;swiftex&quot;},{&quot;name&quot;:&quot;Switcheo&quot;,&quot;id&quot;:&quot;switcheo&quot;},{&quot;name&quot;:&quot;Swop.Fi&quot;,&quot;id&quot;:&quot;swop_fi&quot;},{&quot;name&quot;:&quot;Kwenta&quot;,&quot;id&quot;:&quot;synthetix&quot;},{&quot;name&quot;:&quot;Satang Pro&quot;,&quot;id&quot;:&quot;tdax&quot;},{&quot;name&quot;:&quot;TheRockTrading&quot;,&quot;id&quot;:&quot;therocktrading&quot;},{&quot;name&quot;:&quot;Thodex&quot;,&quot;id&quot;:&quot;thodex&quot;},{&quot;name&quot;:&quot;THORSwap&quot;,&quot;id&quot;:&quot;thorswap&quot;},{&quot;name&quot;:&quot;Tidebit&quot;,&quot;id&quot;:&quot;tidebit&quot;},{&quot;name&quot;:&quot;Tidex&quot;,&quot;id&quot;:&quot;tidex&quot;},{&quot;name&quot;:&quot;Tokenize&quot;,&quot;id&quot;:&quot;tokenize&quot;},{&quot;name&quot;:&quot;Tokenlon&quot;,&quot;id&quot;:&quot;tokenlon&quot;},{&quot;name&quot;:&quot;Tokenomy&quot;,&quot;id&quot;:&quot;tokenomy&quot;},{&quot;name&quot;:&quot;TokenSets&quot;,&quot;id&quot;:&quot;token_sets&quot;},{&quot;name&quot;:&quot;TokensNet&quot;,&quot;id&quot;:&quot;tokens_net&quot;},{&quot;name&quot;:&quot;TokoCrypto&quot;,&quot;id&quot;:&quot;toko_crypto&quot;},{&quot;name&quot;:&quot;TOKOK&quot;,&quot;id&quot;:&quot;tokok&quot;},{&quot;name&quot;:&quot;Tokpie&quot;,&quot;id&quot;:&quot;tokpie&quot;},{&quot;name&quot;:&quot;TomoDEX&quot;,&quot;id&quot;:&quot;tomodex&quot;},{&quot;name&quot;:&quot;TopBTC&quot;,&quot;id&quot;:&quot;topbtc&quot;},{&quot;name&quot;:&quot;TradeOgre&quot;,&quot;id&quot;:&quot;trade_ogre&quot;},{&quot;name&quot;:&quot;Trader Joe&quot;,&quot;id&quot;:&quot;traderjoe&quot;},{&quot;name&quot;:&quot;TronTrade&quot;,&quot;id&quot;:&quot;tron_trade&quot;},{&quot;name&quot;:&quot;PoloniDEX&quot;,&quot;id&quot;:&quot;trx_market&quot;},{&quot;name&quot;:&quot;Txbit&quot;,&quot;id&quot;:&quot;txbit&quot;},{&quot;name&quot;:&quot;Ubeswap&quot;,&quot;id&quot;:&quot;ubeswap&quot;},{&quot;name&quot;:&quot;Unicly&quot;,&quot;id&quot;:&quot;unicly&quot;},{&quot;name&quot;:&quot;Uniswap (v3)&quot;,&quot;id&quot;:&quot;uniswap&quot;},{&quot;name&quot;:&quot;Uniswap (Arbitrum One)&quot;,&quot;id&quot;:&quot;uniswap_arbitrum&quot;},{&quot;name&quot;:&quot;Uniswap (Optimism)&quot;,&quot;id&quot;:&quot;uniswap_optimism&quot;},{&quot;name&quot;:&quot;Uniswap (v1)&quot;,&quot;id&quot;:&quot;uniswap_v1&quot;},{&quot;name&quot;:&quot;Uniswap (v2)&quot;,&quot;id&quot;:&quot;uniswap_v2&quot;},{&quot;name&quot;:&quot;Unnamed&quot;,&quot;id&quot;:&quot;unnamed&quot;},{&quot;name&quot;:&quot;Upbit&quot;,&quot;id&quot;:&quot;upbit&quot;},{&quot;name&quot;:&quot;Upbit Indonesia &quot;,&quot;id&quot;:&quot;upbit_indonesia&quot;},{&quot;name&quot;:&quot;Value Liquid&quot;,&quot;id&quot;:&quot;value_liquid&quot;},{&quot;name&quot;:&quot;vSwap BSC&quot;,&quot;id&quot;:&quot;value_liquid_bsc&quot;},{&quot;name&quot;:&quot;VB&quot;,&quot;id&quot;:&quot;vb&quot;},{&quot;name&quot;:&quot;VCC Exchange&quot;,&quot;id&quot;:&quot;vcc&quot;},{&quot;name&quot;:&quot;Vebitcoin&quot;,&quot;id&quot;:&quot;vebitcoin&quot;},{&quot;name&quot;:&quot;Velic&quot;,&quot;id&quot;:&quot;velic&quot;},{&quot;name&quot;:&quot;Vindax&quot;,&quot;id&quot;:&quot;vindax&quot;},{&quot;name&quot;:&quot;Vinex&quot;,&quot;id&quot;:&quot;vinex&quot;},{&quot;name&quot;:&quot;ViperSwap&quot;,&quot;id&quot;:&quot;viperswap&quot;},{&quot;name&quot;:&quot;Virgox&quot;,&quot;id&quot;:&quot;virgox&quot;},{&quot;name&quot;:&quot;ViteX&quot;,&quot;id&quot;:&quot;vitex&quot;},{&quot;name&quot;:&quot;VVS Finance&quot;,&quot;id&quot;:&quot;vvs_finance&quot;},{&quot;name&quot;:&quot;WaultSwap&quot;,&quot;id&quot;:&quot;wault_swap&quot;},{&quot;name&quot;:&quot;WaultSwap Polygon&quot;,&quot;id&quot;:&quot;waultswap_polygon&quot;},{&quot;name&quot;:&quot;Waves.Exchange&quot;,&quot;id&quot;:&quot;waves&quot;},{&quot;name&quot;:&quot;WazirX&quot;,&quot;id&quot;:&quot;wazirx&quot;},{&quot;name&quot;:&quot;WhaleEx&quot;,&quot;id&quot;:&quot;whale_ex&quot;},{&quot;name&quot;:&quot;WhiteBIT&quot;,&quot;id&quot;:&quot;whitebit&quot;},{&quot;name&quot;:&quot;WOO Network&quot;,&quot;id&quot;:&quot;wootrade&quot;},{&quot;name&quot;:&quot;XCOEX&quot;,&quot;id&quot;:&quot;xcoex&quot;},{&quot;name&quot;:&quot;xFutures&quot;,&quot;id&quot;:&quot;xfutures&quot;},{&quot;name&quot;:&quot;XT.COM&quot;,&quot;id&quot;:&quot;xt&quot;},{&quot;name&quot;:&quot;YoBit&quot;,&quot;id&quot;:&quot;yobit&quot;},{&quot;name&quot;:&quot;Yunex.io&quot;,&quot;id&quot;:&quot;yunex&quot;},{&quot;name&quot;:&quot;Zaif&quot;,&quot;id&quot;:&quot;zaif&quot;},{&quot;name&quot;:&quot;ZB&quot;,&quot;id&quot;:&quot;zb&quot;},{&quot;name&quot;:&quot;ZBG&quot;,&quot;id&quot;:&quot;zbg&quot;},{&quot;name&quot;:&quot;ZBG Futures&quot;,&quot;id&quot;:&quot;zbg_futures&quot;},{&quot;name&quot;:&quot;ZBX&quot;,&quot;id&quot;:&quot;zbx&quot;},{&quot;name&quot;:&quot;Zebitex&quot;,&quot;id&quot;:&quot;zebitex&quot;},{&quot;name&quot;:&quot;ZebPay&quot;,&quot;id&quot;:&quot;zebpay&quot;},{&quot;name&quot;:&quot;0x Protocol&quot;,&quot;id&quot;:&quot;zero_ex&quot;},{&quot;name&quot;:&quot;Zero Exchange&quot;,&quot;id&quot;:&quot;zero_exchange&quot;},{&quot;name&quot;:&quot;ZG.com&quot;,&quot;id&quot;:&quot;zg&quot;},{&quot;name&quot;:&quot;ZG.TOP&quot;,&quot;id&quot;:&quot;zgtop&quot;},{&quot;name&quot;:&quot;ZilSwap&quot;,&quot;id&quot;:&quot;zilswap&quot;},{&quot;name&quot;:&quot;Zipmex&quot;,&quot;id&quot;:&quot;zipmex&quot;},{&quot;name&quot;:&quot;ZKSwap (v1)&quot;,&quot;id&quot;:&quot;zkswap&quot;},{&quot;name&quot;:&quot;ZKSwap (v2)&quot;,&quot;id&quot;:&quot;zkswap_v2&quot;}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:39]</span>
+                <span class="scenario-name">Mostra informações relativas a exchange inahub. Como ela não existe no momento, é retornado um erro</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>378</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://api.coingecko.com/api/v3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:01:03.988 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;exchanges/inahub&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">367</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">20:01:04.003 request:
+1 &gt; GET https://api.coingecko.com/api/v3/exchanges/inahub
+1 &gt; Host: api.coingecko.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:01:04.365 response time in milliseconds: 361
+1 &lt; 404
+1 &lt; Date: Wed, 24 Nov 2021 23:02:05 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: POST, PUT, DELETE, GET, OPTIONS
+1 &lt; Access-Control-Request-Method: *
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+1 &lt; Access-Control-Expose-Headers: link, per-page, total
+1 &lt; Vary: Accept-Encoding, Origin
+1 &lt; Cache-Control: no-cache
+1 &lt; X-Request-Id: 23c28474-f96b-4a5d-a62b-7bdf894db285
+1 &lt; X-Runtime: 0.086114
+1 &lt; CF-Cache-Status: MISS
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6b3643495adacfdc-GRU
+{&quot;error&quot;:&quot;exchange not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref failed">43</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">20:01:04.367 src/test/java/examples/users/users.feature:43
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 361, url: https://api.coingecko.com/api/v3/exchanges/inahub, response: 
+{&quot;error&quot;:&quot;exchange not found&quot;}
+src/test/java/examples/users/users.feature:43
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

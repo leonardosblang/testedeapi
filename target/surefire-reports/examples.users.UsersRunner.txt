@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: examples.users.UsersRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.785 s <<< FAILURE! - in examples.users.UsersRunner
+testParallel  Time elapsed: 5.773 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 517, url: https://api.coingecko.com/api/v3/coins/inacoin, response: 
+{"error":"Could not find coin with the given id"}
+src/test/java/examples/users/users.feature:31
+status code was: 404, expected: 200, response time in milliseconds: 361, url: https://api.coingecko.com/api/v3/exchanges/inahub, response: 
+{"error":"exchange not found"}
+src/test/java/examples/users/users.feature:43 ==> expected: <0> but was: <2>
+	at examples.users.UsersRunner.testParallel(UsersRunner.java:19)
+

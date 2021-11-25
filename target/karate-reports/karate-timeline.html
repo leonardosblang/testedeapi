@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/users\/users[1:6]","start":1637794863067,"end":1637794866183,"title":"src\/test\/java\/examples\/users\/users[1:6] 20:01:03.067-20:01:06.183 Verificar se a API está online"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/users\/users[2:13]","start":1637794863068,"end":1637794863958,"title":"src\/test\/java\/examples\/users\/users[2:13] 20:01:03.068-20:01:03.958 Mostra o preço do bitcoin ano passado"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/users\/users[3:20]","start":1637794863069,"end":1637794864049,"title":"src\/test\/java\/examples\/users\/users[3:20] 20:01:03.069-20:01:04.049 Mostra o preço do ethreum nesse instante"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/users\/users[4:27]","start":1637794863068,"end":1637794864078,"title":"src\/test\/java\/examples\/users\/users[4:27] 20:01:03.068-20:01:04.078 Mostra informações relativas ao Inacoin. Como ele não existe no momento no CoinGecko, é retornado um erro","className":"failed"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/users\/users[5:33]","start":1637794863068,"end":1637794863958,"title":"src\/test\/java\/examples\/users\/users[5:33] 20:01:03.068-20:01:03.958 Dá uma lista das exchanges de criptomoeda"},{"id":6,"group":5,"content":"src\/test\/java\/examples\/users\/users[6:39]","start":1637794863981,"end":1637794864366,"title":"src\/test\/java\/examples\/users\/users[6:39] 20:01:03.981-20:01:04.366 Mostra informações relativas a exchange inahub. Como ela não existe no momento, é retornado um erro","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
