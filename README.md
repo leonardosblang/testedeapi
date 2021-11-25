@@ -19,7 +19,7 @@
 
 ### 1. Quantas suítes de testes você desenvolveu?
 
-Foi desenvolvida uma suíte de teste, que contém seis testes.(4 positivos, 2 negativos).
+Foi desenvolvida apenas uma suíte de testes, que contém seis testes.(4 positivos, 2 negativos).
 
 ### 2. Os testes desenvolvidos são manuais ou automatizados?
 
