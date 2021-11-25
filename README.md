@@ -12,11 +12,11 @@
 
    2. Executar no terminal, no diretório do projeto, esse comando:
    
-    ```bash
+ ```bash
     
-    mvn clean test -f "pom.xml" -Dtest=ApiTestRunner "-Dkarate.options=src\test\java\examples\users\users.feature"
+   mvn clean test -f "pom.xml" -Dtest=ApiTestRunner "-Dkarate.options=src\test\java\examples\users\users.feature"
     
-    ```
+ ```
     
 ## Questão 2
 
