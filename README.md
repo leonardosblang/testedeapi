@@ -8,7 +8,9 @@
 
 ### Como Executar
 
-   Executar no terminal, no diretório do projeto, esse comando:
+   1.Instalar o maven e configurar as variáveis de ambiente
+
+   2.Executar no terminal, no diretório do projeto, esse comando:
    
     ```bash
     mvn clean test -f "pom.xml" -Dtest=ApiTestRunner "-Dkarate.options=src\test\java\examples\users\users.feature"
